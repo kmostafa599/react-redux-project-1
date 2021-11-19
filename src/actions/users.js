@@ -2,7 +2,7 @@
 export const RECIEVE_USERS = 'RECIEVE_USERS' 
 
 //taking the id of the user
-export function receiveTweets(id){
+export function receiveUsers(id){
 
     return {
         type:RECIEVE_USERS,

@@ -1,4 +1,8 @@
 import React, { Component } from 'react'
+import {connect} from 'react-redux'
+import { handleIntialData } from '../actions/shared'
+
+
 //________________
 //   STORE
 //--------------
@@ -10,6 +14,11 @@ import React, { Component } from 'react'
 
 
 class App extends Component {
+
+  componentDidMount(){
+    this.props.dispatch(handleIntialData())//handleIntialData() is the action
+  }
+
   render() {
     return (
       <div>
@@ -19,4 +28,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default connect()(App)
