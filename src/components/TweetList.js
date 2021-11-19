@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 
+//Actions symbol -> ()  
+//data symbol -> #
 
-//get list  of tweets action
+
+//(get) list  of #tweets data#
 
 class TweetList extends Component {
   render() {

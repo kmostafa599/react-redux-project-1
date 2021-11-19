@@ -1,8 +1,14 @@
 import React, { Component } from 'react'
 
+//Actions symbol -> ()  
+//data symbol -> #
 
-//get specific tweet from list of tweets 
-//get replies of specific tweet from a list of tweets 
+
+//(get) specific #tweet# from list of #tweets# 
+//(get) #replies# of specific #tweet# from a list of #tweets# 
+
+
+
 
 class TweetContainer extends Component {
   render() {

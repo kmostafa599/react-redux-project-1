@@ -1,4 +1,13 @@
 import React, { Component } from 'react'
+//________________
+//   STORE
+//--------------
+// TWEETS
+//  USERS
+// AUTHEDUSER
+//_______________
+
+
 
 class App extends Component {
   render() {
