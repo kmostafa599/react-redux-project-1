@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "src",
+			"path": "."
+		},
+		{
+			"name": "ChriperApp",
+			"path": "..\\..\\..\\Kareem\\chriperApp\\ChriperApp"
+		},
+		{
+			"name": "public",
+			"path": "..\\public"
+		}
+	],
+	"settings": {}
+}
