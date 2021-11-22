@@ -25,6 +25,7 @@ class Tweet extends Component {
         //tweet text
         //reply button (and acounter)
         //like button (and acounter)
+        
       }
       </div>
     )
@@ -35,8 +36,11 @@ class Tweet extends Component {
 function mapStateToProps({authedUser, users, tweets},{id}){
 
   const tweet = tweets[id]
-  console.log("tweeeet", id)
-  //console.log(users[tweet.author])
+  console.log("tweet ID: ", id)
+  console.log("tweet: ", tweet)
+  console.log("auhtor: ",tweet.author)
+  console.log("users: " ,users)
+  console.log("auhtor from users: ",users[tweet.author])
   //console.log(tweets[id].author)
   return { 
     authedUser,
