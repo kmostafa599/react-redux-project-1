@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { formatTweet } from '../utils/helpers'
+
 
 
 //Actions symbol -> ()  
@@ -14,18 +17,33 @@ import React, { Component } from 'react'
 
 class Tweet extends Component {
   render() {
+    //console.log(this.props)
     return (
-      <div>
+      <div className='tweet'>
         {//username
         //timestamp
         //tweet text
         //reply button (and acounter)
         //like button (and acounter)
-         
-    }
+      }
       </div>
     )
   }
 }
 
-export default Tweet
+//          from the store state           ,  props
+function mapStateToProps({authedUser, users, tweets},{id}){
+
+  const tweet = tweets[id]
+  console.log("tweeeet", id)
+  //console.log(users[tweet.author])
+  //console.log(tweets[id].author)
+  return { 
+    authedUser,
+    tweet : formatTweet(tweet, users[tweet.author], authedUser)
+  }
+
+
+}
+
+export default connect(mapStateToProps)(Tweet)
