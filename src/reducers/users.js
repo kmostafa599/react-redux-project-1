@@ -9,7 +9,7 @@ export  function users(state ={},action){
         case RECIEVE_USERS:
             return{
                 ...state,
-                ...action.users,
+                ...action.id, //ACTION.ID NOT ACTIONS.USERS
             }
         default:
             return state
